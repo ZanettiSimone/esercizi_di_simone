@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login MindTeca</title>
+  <meta name="description"
+    content="Utilizza questa pagina per accedere al pannello di controllo della biblioteca digitale di MIND.">
+  <meta name="author" content="Alessandro, insegnante MIND">
+  <meta name="copyright" content="&copy; 2025, corso Full Stack Developer">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="MindTeca" />
+  <link rel="manifest" href="img/favicon/site.webmanifest" />
+  <!-- favicon -->
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-page">
+  <header class="header">
+    <div class="header__inner container">
+      <a class="logo-login" href="/index.html" title="Back to home">
+        <svg id="mind_logo" data-name="Componente 6 – 2" xmlns="http://www.w3.org/2000/svg" width="89.288"
+          height="23.377" viewBox="0 0 89.288 23.377">
+          <path id="Tracciato_96" data-name="Tracciato 96" d="M11.072,28.66V5.283h4.617V28.66Z"
+            transform="translate(20.345 -5.283)" fill="#25a8e5" />
+          <g id="Raggruppa_48" data-name="Raggruppa 48" transform="translate(0 0.002)">
+            <path id="Tracciato_97" data-name="Tracciato 97" d="M9.2,12.4V5.283H4.846V28.656H9.2Z"
+              transform="translate(-4.846 -5.283)" fill="#d32e5c" />
+            <path id="Tracciato_98" data-name="Tracciato 98"
+              d="M19.474,5.283,12.617,22.162,6.143,6.6V17.713l4.528,10.943h3.791l6.725-16.384V28.656h4.483V5.283Z"
+              transform="translate(0.405 -5.283)" fill="#d32e5c" />
+          </g>
+          <g id="Raggruppa_49" data-name="Raggruppa 49" transform="translate(41.375 0.002)">
+            <rect id="Rettangolo_14" data-name="Rettangolo 14" width="4.548" height="23.373" fill="#e07c2f" />
+            <path id="Tracciato_99" data-name="Tracciato 99"
+              d="M23.033,5.283V20.744L14.382,6.991V15.5L22.8,28.656h4.78V5.283Z" transform="translate(-7.638 -5.283)"
+              fill="#e07c2f" />
+          </g>
+          <path id="Tracciato_100" data-name="Tracciato 100"
+            d="M26.428,5.283H24.8V9.506h1.463c3.825,0,6.988,2.407,6.988,7.483s-3.2,7.448-7.024,7.448H22.6V5.283H18.057V28.66H26.4c6.655,0,11.57-4.289,11.57-11.671S33.089,5.283,26.428,5.283Z"
+            transform="translate(48.606 -5.283)" fill="#49a261" />
+          <path id="Tracciato_101" data-name="Tracciato 101" d="M6.168,6.076,6.137,14.4l2.142,5.213Z"
+            transform="translate(0.381 -2.076)" fill="#a81a4b" />
+          <path id="Tracciato_102" data-name="Tracciato 102" d="M14.384,6l.01,6.711,2.294,3.577L14.383,5.981Z"
+            transform="translate(33.741 -2.46)" fill="#ad5f16" />
+          <path id="Tracciato_103" data-name="Tracciato 103" d="M19.394,5.358V9.2l1.938.013Z"
+            transform="translate(54.014 -4.981)" fill="#00783e" />
+          <g id="Raggruppa_50" data-name="Raggruppa 50" transform="translate(85.241)">
+            <path id="Tracciato_104" data-name="Tracciato 104"
+              d="M23.752,5.283a2.049,2.049,0,1,1-2.013,2.044A2.043,2.043,0,0,1,23.752,5.283Zm0,3.689a1.592,1.592,0,0,0,1.584-1.645,1.585,1.585,0,1,0-3.169,0A1.6,1.6,0,0,0,23.752,8.972ZM23.5,8.427h-.424V6.2h.772a.712.712,0,0,1,.752.7.683.683,0,0,1-.484.656l.494.873h-.479l-.464-.833H23.5Zm.288-1.2c.247,0,.389-.121.389-.328s-.141-.338-.389-.338H23.5v.666Z"
+              transform="translate(-21.739 -5.283)" fill="#b2b2b2" />
+          </g>
+        </svg>
+      </a>
+      <div class="icons">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+        </svg>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="bg-primary div1_login">
+      <form class="login_form container" action="/login.php" method="post" target="_self">
+        <h6 class="verifica_login casella_login">Verifica del login fallita</h6>
+        <input class="dati_login casella_login" type="text" name="nome" id="nome">
+        <input class="dati_login casella_login" type="password" name="password" id="password">
+        <label for="ricordami">Ricordami</label>
+        <input type="checkbox" name="ricordami" id="ricordami" </form>
+    </div>
+    <div class="floating-shape shape-round-login"></div>
+    <div class="floating-shape shape-squared-login"></div>
+  </main>
+</body>
+
+</html>

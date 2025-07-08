@@ -1,0 +1,17 @@
+Rappresentazione nativa degli elementi html da parte del browser
+Il browser nell'interpretare gli elementi html procede a presentarli secondo uno schema standard:
+1. Li posiziona a partire dal punto più in alto a sinistra (si intende proprio il pixel pi in alto a sinistra)
+2. Gli elementi html si suddividono in 2 principali nature: elementi di blocco (block-level elements) e elementi inline (inline-level elements)
+
+Le due nature degli elementi html:
+Block level: 
+1. elemento di tipo blocco in cui non è dichiarata nessuna larghezza occuperà il 100% della viewport;
+un elemento di blocco di dimensioni  non specificate occupa tra margini, bordi, padding e contenuto, tutta la larghezza messa a disposizione (vale anche se questo blocco è inserito in un blocco contenitore);
+2. un elemento block-level può contenere altri elementi block level ed anche elementi inline
+3. a un elemento block-level si possono dare dimensioni
+
+inline level:
+1. un elemento inline occupa sia in orizzontale che in verticale lo spazio necessario al suo contenuto
+2. un elemento inline non può contenere elementi di blocco ma solo altri elementi inline;
+3. ad un elemento inline non si possono dare dimensioni, a meno che non si sia modificata la sua natura con proprietà specifiche (float, position, display)
+4. gli elementi inline vengono posizionati orizzontalmente adiacenti (a differenza degli elementi di blocco)

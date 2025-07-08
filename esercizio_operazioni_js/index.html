@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizi di Simone</title>
+    <meta name="description" content="Esercizi di Simone">
+    <link rel="stylesheet" href="css/zsStyle.css">
+</head>
+
+<body>
+    <section class="Container1">
+        <div class="Titolo">
+            <h1>Esercitazione Java-Script<br>Le quattro operazioni</h1>
+        </div>
+        <div class="Flex_r1_ywjcsbaicnW">
+            <div class="Flex_c1_nwjccaicnW Flex_r1_ywjcsbaicnW_f">
+                <h1 class="">Ins. 1° Numero
+                </h1>
+                <input type="number" id="firstNumber" placeholder="Primo Numero">
+            </div>
+            <div class="Flex_c1_nwjccaicnW Flex_r1_ywjcsbaicnW_f">
+                <div class="opzione">
+                    <input type="radio" name="tipoOperazione" id="addizione" value="" checked>
+                    <label for="addizione">
+                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="Edit / Add_Plus">
+                                <path id="Vector" d="M6 12H12M12 12H18M12 12V18M12 12V6" stroke="#000000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                        </svg>
+                    </label>
+                </div>
+                <div class="opzione">
+                    <input type="radio" name="tipoOperazione" id="sottrazione" value="" cheched>
+                    <label for="sottrazione">
+                        <svg fill="#000000" width="30px" height="30px" viewBox="-3 0 19 19"
+                            xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg">
+                            <path
+                                d="M12.711 9.182a1.03 1.03 0 0 1-1.03 1.03H1.319a1.03 1.03 0 1 1 0-2.059h10.364a1.03 1.03 0 0 1 1.029 1.03z" />
+                        </svg>
+                    </label>
+                </div>
+                <div class="opzione">
+                    <input type="radio" name="tipoOperazione" id="moltiplicazione" value="" cheched>
+                    <label for="moltiplicazione">
+                        <svg fill="#000000" width="30px" height="30px" viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.004 23.087l7.08-7.081-7.07-7.071L8.929 7.02l7.067 7.069L23.084 7l1.912 1.913-7.089 7.093 7.075 7.077-1.912 1.913-7.074-7.073L8.917 25z" />
+                        </svg>
+                    </label>
+                </div>
+                <div class="opzione">
+                    <input type="radio" name="tipoOperazione" id="divisione" value="" cheched>
+                    <label for="divisione">
+                        <svg fill="#000000" width="30px" height="30px" viewBox="-3 0 19 19"
+                            xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg">
+                            <path
+                                d="M12.711 9.182a1.03 1.03 0 0 1-1.03 1.03H1.319a1.03 1.03 0 1 1 0-2.059h10.364a1.03 1.03 0 0 1 1.029 1.03zM5.03 4.586a1.47 1.47 0 1 1 1.47 1.47 1.47 1.47 0 0 1-1.47-1.47zm2.94 9.193a1.47 1.47 0 1 1-1.47-1.47 1.47 1.47 0 0 1 1.47 1.47z" />
+                        </svg>
+                    </label>
+                </div>
+            </div>
+            <div class="Flex_c1_nwjccaicnW Flex_r1_ywjcsbaicnW_f">
+                <h1 class="">Ins. 2° Numero
+                </h1>
+                <input type="number" id="secondNumber" placeholder="Secondo Numero">
+            </div>
+            <div class="Flex_c1_nwjccaicnW Flex_r1_ywjcsbaicnW_f">
+                <button type="button" onclick="eseguiOperazione()">Esegui Operazione
+            </div>
+            <div class="Flex_c1_nwjccaicnW Flex_r1_ywjcsbaicnW_f">
+                <h1 class="">Risultato Operazione
+                </h1>
+                <textarea id="textArea">
+                </textarea>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js" type="text/javascript"></script>
+</body>

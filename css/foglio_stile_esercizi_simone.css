@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+/* Le 3 righe sotto non ho capito se sono necessarie */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Stili per la pagina index.html */
+/* TitoloEsercizio ricorre in varie pagine HTML */
+.TitoloEsercizio {
+    margin: 20px auto;
+    width: 100%;
+    border: 3px solid #ff0000;
+    background-color: #ff00002d;
+}
+
+.cls_Esercizi_Simone {
+    margin: 20px auto;
+    width: 100%;
+    background-color: #8080803c;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.cls_Menu_Es {
+    background-color: #ffffff;
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+.cls_Titoli_Es {
+    margin-bottom: 10px;
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+li:hover {
+    background-color: #000000;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Stili per la pagina lezione_4_es_1.html */
+.cls_Div_L4_E1 {
+    height: 500px;
+    width: 100%;
+    background-color: #ffff00;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cls_Div_L4_E1 .cls_Div_L4_E1_Interna {
+    height: 250px;
+    width: 250px;
+}
+
+.cls_Rosso {
+    background-color: #da333c;
+}
+
+.cls_Bianco {
+    background-color: #ffffff;
+}
+
+.cls_Verde {
+    background-color: #008000;
+}
+
+/* Stili per la pagina lezione_4_es_2.html */
+#header {
+    height: 100px;
+    background-color: #00ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Id_Menu1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.cls_Div_L4_E2_1 {
+    margin-left: 20px;
+}
+
+.cls_Div_L4_E2_3 {
+    margin-right: 20px;
+}
+
+#immagine {
+    color: aqua;
+
+}
+
+#divimm {
+    color: #00ffff;
+}
+
+
+#divprove {
+    width: 300px;
+    min-height: 300px;
+    background-color: #00ffff;
+}
+
+
+/* Design e Responsiveness */
+
+/* da 1401 a infinito */
+@media screen and (min-width: 1401px) {
+    #divprove {
+        background-color: #da333c;
+    }
+}
+
+/* da 1201 a 1400 */
+@media screen and (max-width: 1400px) {
+    #divprove {
+        background-color: #ffff00;
+    }
+}
+
+/* da 993 a 1200 */
+@media screen and (max-width: 1200px) {
+    #divprove {
+        background-color: #00ffff;
+    }
+}
+
+/* da 769 a 992 */
+@media screen and (max-width: 992px) {
+    #divprove {
+        background-color: chartreuse;
+    }
+}
+
+/* da 577 a 768 */
+@media screen and (max-width: 768px) {
+    #divprove {
+        background-color: #ffffff;
+    }
+}
+
+/* da 0 a 576 */
+@media screen and (max-width: 576px) {
+    #divprove {
+        background-color: #000000;
+    }
+}

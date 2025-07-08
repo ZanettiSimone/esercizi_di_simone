@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="89.288" height="23.377"><svg id="SvgjsSvg1043" data-name="Componente 6 – 2" xmlns="http://www.w3.org/2000/svg" width="89.288" height="23.377" viewBox="0 0 89.288 23.377">
+  <path id="SvgjsPath1042" data-name="Tracciato 96" d="M11.072,28.66V5.283h4.617V28.66Z" transform="translate(20.345 -5.283)" fill="#25a8e5"></path>
+  <g id="SvgjsG1041" data-name="Raggruppa 48" transform="translate(0 0.002)">
+    <path id="SvgjsPath1040" data-name="Tracciato 97" d="M9.2,12.4V5.283H4.846V28.656H9.2Z" transform="translate(-4.846 -5.283)" fill="#d32e5c"></path>
+    <path id="SvgjsPath1039" data-name="Tracciato 98" d="M19.474,5.283,12.617,22.162,6.143,6.6V17.713l4.528,10.943h3.791l6.725-16.384V28.656h4.483V5.283Z" transform="translate(0.405 -5.283)" fill="#d32e5c"></path>
+  </g>
+  <g id="SvgjsG1038" data-name="Raggruppa 49" transform="translate(41.375 0.002)">
+    <rect id="SvgjsRect1037" data-name="Rettangolo 14" width="4.548" height="23.373" fill="#e07c2f"></rect>
+    <path id="SvgjsPath1036" data-name="Tracciato 99" d="M23.033,5.283V20.744L14.382,6.991V15.5L22.8,28.656h4.78V5.283Z" transform="translate(-7.638 -5.283)" fill="#e07c2f"></path>
+  </g>
+  <path id="SvgjsPath1035" data-name="Tracciato 100" d="M26.428,5.283H24.8V9.506h1.463c3.825,0,6.988,2.407,6.988,7.483s-3.2,7.448-7.024,7.448H22.6V5.283H18.057V28.66H26.4c6.655,0,11.57-4.289,11.57-11.671S33.089,5.283,26.428,5.283Z" transform="translate(48.606 -5.283)" fill="#49a261"></path>
+  <path id="SvgjsPath1034" data-name="Tracciato 101" d="M6.168,6.076,6.137,14.4l2.142,5.213Z" transform="translate(0.381 -2.076)" fill="#a81a4b"></path>
+  <path id="SvgjsPath1033" data-name="Tracciato 102" d="M14.384,6l.01,6.711,2.294,3.577L14.383,5.981Z" transform="translate(33.741 -2.46)" fill="#ad5f16"></path>
+  <path id="SvgjsPath1032" data-name="Tracciato 103" d="M19.394,5.358V9.2l1.938.013Z" transform="translate(54.014 -4.981)" fill="#00783e"></path>
+  <g id="SvgjsG1031" data-name="Raggruppa 50" transform="translate(85.241)">
+    <path id="SvgjsPath1030" data-name="Tracciato 104" d="M23.752,5.283a2.049,2.049,0,1,1-2.013,2.044A2.043,2.043,0,0,1,23.752,5.283Zm0,3.689a1.592,1.592,0,0,0,1.584-1.645,1.585,1.585,0,1,0-3.169,0A1.6,1.6,0,0,0,23.752,8.972ZM23.5,8.427h-.424V6.2h.772a.712.712,0,0,1,.752.7.683.683,0,0,1-.484.656l.494.873h-.479l-.464-.833H23.5Zm.288-1.2c.247,0,.389-.121.389-.328s-.141-.338-.389-.338H23.5v.666Z" transform="translate(-21.739 -5.283)" fill="#b2b2b2"></path>
+  </g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>

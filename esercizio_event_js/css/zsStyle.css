@@ -1,0 +1,471 @@
+﻿@charset "utf-8";
+
+*,
+*::before,
+*::after {
+    Margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 40px;
+    padding: 10px;
+    gap: 30px;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+li {
+    transition: all 0.6s ease;
+}
+
+li:hover {
+    /*  background-color: #000000; */
+    transition: all 0.6s ease;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF0000;
+    cursor: pointer;
+    text-decoration-color: #FF0000;
+}
+
+.sfondo {
+    background-color: #808080;
+    width: 100vw;
+    height: 80px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+.logobar {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+
+}
+
+.menubar {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.iconbar {
+    width: 19%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    padding-right: 15px;
+}
+
+.btnMenu {
+    display: none;
+    cursor: pointer;
+    background-color: #808080;
+    border: none;
+}
+
+/* Controllare codice fino al prossimo commento */
+
+.menubar.activeMenuMobile {
+    position: absolute;
+    display: block;
+    top: 100px;
+    width: 100%;
+    height: 500px;
+    background-color: #808080;
+    padding-top: 15px;
+}
+
+.menubar.activeMenuMobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.menubar.activeMenuMobile ul li {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Controllare fino a quì */
+
+.submenu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    background-color: #808080;
+    padding: 16px 0;
+    position: absolute;
+    top: 70px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+.linkConFigli {
+    position: relative;
+}
+
+a.active+.submenu {
+    position: absolute;
+    transition: all 0.5s ease;
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sezContatore {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divContatore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+button {
+    width: 100px;
+    border: #808080 1px solid;
+    border-radius: 100%;
+    padding: 20px;
+
+}
+
+@media screen and (min-width: 1600px) {
+    h1 {
+        font-size: 2vw;
+    }
+
+    h2 {
+        font-size: 1.8vw;
+    }
+
+    h3 {
+        font-size: 1.6vw;
+    }
+
+    h4 {
+        font-size: 1.4vw;
+    }
+
+    h5 {
+        font-size: 1.2vw;
+    }
+
+    h6 {
+        font-size: 1vw;
+    }
+
+    p {
+        font-size: .8vw;
+    }
+
+    a,
+    li {
+        font-size: 1.3vw;
+    }
+
+    .Container1 {
+        width: 92%;
+        margin-left: 4.00%;
+        display: flex;
+        flex-direction: row;
+        gap: 1vh;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    h1 {
+        font-size: 2.5vw;
+    }
+
+    h2 {
+        font-size: 1.8vw;
+    }
+
+    h3 {
+        font-size: 1.6vw;
+    }
+
+    h4 {
+        font-size: 1.4vw;
+    }
+
+    h5 {
+        font-size: 1.2vw;
+    }
+
+    h6 {
+        font-size: 1vw;
+    }
+
+    p {
+        font-size: .8vw;
+    }
+
+    a,
+    li {
+        font-size: 1.3vw;
+    }
+
+    .Container1 {
+        width: 94%;
+        margin-left: 3.00%;
+        display: flex;
+        flex-direction: row;
+        gap: 1vh;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .menubar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .btnMenu {
+        display: inline;
+    }
+
+    a.active+.submenu {
+        position: static;
+    }
+
+
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    h1 {
+        font-size: 2.5vw;
+    }
+
+    h2 {
+        font-size: 2vw;
+    }
+
+    h3 {
+        font-size: 1.8vw;
+    }
+
+    h4 {
+        font-size: 1.6vw;
+    }
+
+    h5 {
+        font-size: 1.4vw;
+    }
+
+    h6 {
+        font-size: 1.2vw;
+    }
+
+    p {
+        font-size: .9vw;
+    }
+
+    a,
+    li {
+        font-size: 1.5vw;
+    }
+
+    .Container1 {
+        width: 95%;
+        margin-left: 2.50%;
+        display: flex;
+        flex-direction: row;
+        gap: 1vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    h1 {
+        font-size: 2.8vw;
+    }
+
+    h2 {
+        font-size: 2.2vw;
+    }
+
+    h3 {
+        font-size: 2vw;
+    }
+
+    h4 {
+        font-size: 1.8vw;
+    }
+
+    h5 {
+        font-size: 1.6vw;
+    }
+
+    h6 {
+        font-size: 1.4vw;
+    }
+
+    p {
+        font-size: 1vw;
+    }
+
+    a,
+    li {
+        font-size: 1.5vw;
+    }
+
+    .Container1 {
+        width: 96%;
+        margin-left: 2.00%;
+        display: flex;
+        flex-direction: row;
+        gap: 1vh;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    h1 {
+        font-size: 3vw;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    h3 {
+        font-size: 2.2vw;
+    }
+
+    h4 {
+        font-size: 2vw;
+    }
+
+    h5 {
+        font-size: 1.8vw;
+    }
+
+    h6 {
+        font-size: 1.6vw;
+    }
+
+    p {
+        font-size: 1.2vw;
+    }
+
+    a,
+    li {
+        font-size: 1.6vw;
+    }
+
+    .Container1 {
+        width: 98%;
+        margin-left: 1.00%;
+        display: flex;
+        flex-direction: row;
+        gap: 1vh;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 3.3vw;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    h3 {
+        font-size: 2.4vw;
+    }
+
+    h4 {
+        font-size: 2.1vw;
+    }
+
+    h5 {
+        font-size: 2vw;
+    }
+
+    h6 {
+        font-size: 1.8vw;
+    }
+
+    p {
+        font-size: 1.3vw;
+    }
+
+    a,
+    li {
+        font-size: 1.8vw;
+    }
+
+    .Container1 {
+        width: 100%;
+        margin-left: 0.00%;
+        display: flex;
+        flex-direction: row;
+        gap: 1vh;
+    }
+
+    .submenu {
+        position: static;
+        max-height: 0;
+        visibility: hidden;
+        padding: 0;
+    }
+
+    a.active+.submenu {
+        max-height: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+
+}
